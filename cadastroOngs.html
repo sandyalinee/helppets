@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TCC HELP PETS</title>
+    <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="stylesheet" type="text/css" href="ongs.css" />
+    <!--[if lte IE 8]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+      <div class="vw-plugin-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+<style>
+
+/* configurações de design da div */
+
+div{ 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding:50px;
+box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.781); /* Adiciona uma sombra leve */
+	 backdrop-filter: blur(5px);
+align: center;
+}
+
+div{ 
+border: 1px solid #000000c7; /* Define uma borda sólida de 2 pixels com a cor cinza (#ccc) */
+padding: 20px; /* Espaçamento interno para afastar o conteúdo da borda */
+border-radius: 10%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding:50px;
+align: center;
+}
+
+
+/* configurações de design do input "login" */
+
+
+input[id="cadastrar"]
+{
+border-radius:0px;
+width: 100%;
+padding:10px;
+background: fff;
+border-radius:8px;
+}
+
+
+/* configurações de design do input "email" */
+
+input[id="usuario"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background: #ffffff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[name="cadastrar"]
+{
+color: #000000;
+}
+
+
+/* configurações de design do input "senha" */
+
+input[id="senha"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background: fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[id="repsenha"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background:fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[id="ni"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background: fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[id="email"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background: fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[id="nome"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background:fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[id="cpf"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background: fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[id="genero"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background: fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input[id="cep"]
+{
+border-radius:0px;
+width: 100%;
+padding:5px;
+background: fff;
+outline: none;
+border: none;
+border-radius:8px;
+}
+
+input::placeholder {
+color: #000000;
+}
+
+/* configurações de design do body */
+
+body
+
+h2
+{
+top: 0px;
+left: 34%;
+}
+</style>
+
+<!-- início do corpo do código
+ e do form em html -->
+
+</head>
+<body bgcolor="20B2AA">
+<!-- início do form -->
+<form name="MeuFormulario" action="cadastro.php" method="post">
+<div> 
+<br>
+<h3> <center> <font color= black >  Faça o Cadastro da sua Ong ⇓ </font> </center> </h3>
+<br>
+
+<center>
+<input type="text" id="empresa" name="empresa"
+size="40" placeholder="Nome da instituição:" required autofocus/> </center>
+<br>
+
+<center>
+<input type="text" id="email" name="email"
+size="40" placeholder="Email:" 
+required autofocus/> </center>
+<br>
+<center>
+<input type="password" id="senha" name="senha"
+size="40" placeholder="Coloque sua sua senha:" required autofocus/> </center>
+<br>
+<center>
+<input type="password" id="repetir_senha" name="repetir_senha"
+size="40" placeholder="Repita sua sua senha:" required autofocus/> </center>
+<br>
+<center>
+<input type="text" id="representante" name="representante"
+size="40" placeholder="Nome completo do representante:" required autofocus/> </center>
+<br>
+<center>
+<input type="number" id="cpf" name="cpf" 
+size="11" placeholder="CPF:" required autofocus/> </center>
+
+<br>
+<center>
+  <select name="genero" id="genero">
+    <option value="">Escolha seu gênero</option>
+    <option value="Feminino"> feminino </option>
+    <option value="Masculino"> masculino</option>
+
+  </select> 
+<br>
+  <br>
+
+  <input type="text" id="cep" name="cep"
+size="40" placeholder="Cidade/Estado/País:" required autofocus/> </center>
+<br>
+
+<center>
+<input type="submit"  id="cadastrar" name="cadastrar"
+value="Cadastrar"/>
+<br> </center>
+<br>
+<center>
+
+<h5> <a href="paginaloginus.html" style="text-decoration: none;">⫷Já sou um usuário⫸</a>
+  <h5> <a href="index.html" style="text-decoration: none;">⫷Não tem uma conta?⫸</a>
+
+<script>
+function validarInput(input) {
+  // Remove caracteres que não sejam letras ou números usando uma expressão regular
+  input.value = input.value.replace(/[^a-zA-Z0-9]/g, '');
+}
+</script>
+
+</body>
+
+</form>
+
+</div>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

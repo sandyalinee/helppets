@@ -1,0 +1,148 @@
+*{
+	padding:0%;
+	margin:0%;
+	box-sizing: border-box;
+	font-family: "Arial";
+}
+ body{background-color: #ffffff;
+	 width:100%;
+	 display: flex;
+     justify-content: center;
+	 align-items: center;
+ }
+
+ body {
+    background-image: url('fundo.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho para sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
+    /* Outras propriedades de estilo para o corpo da página, como cores de texto, margens, etc. */
+}
+ 
+ form{
+	 width:100%;
+	 max-width:300px;
+ }
+
+ 
+ div.teste{
+	 width:100%;
+	 margin: 30px 0;
+	 position: relative;
+ }
+ 
+ div.teste label {
+	 font-size: 16px;
+	 position: absolute;
+	 left: 0;
+	 bottom: 15px;
+	 color: #FFFFFF;
+	 cursor: text;
+	 transition: 0.5s ease-in-out;
+ }
+ 
+ div.teste input{
+	 width:100%;
+	 padding: 5px;
+	 color: #FFFFFF;
+	 border: 0;
+	 border-bottom: 2px solid #FFFFFF;
+	 outline: 0;
+	 font-size: 16px;
+ }
+ 
+ div.teste input:focus,
+ div.teste input:valid {
+	 border-bottom: 2px solid #FFFFFF;
+ }
+/* Para o primeiro conjunto de campos */
+div.teste input:focus ~label,
+div.teste input:valid ~label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+/* Para o segundo conjunto de campos */
+div.testee input:focus ~label,
+div.testee input:valid ~label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+ .testebt {
+    background-color: rgb(255, 0, 128);
+    outline: none;
+    color: #FFFFFF;
+	width: 40%;
+	padding: 3%;
+	} 
+	div.tudo{
+		font-size:14px;
+		position: fixed;
+		top: 15%;
+		width: 35%;
+	}
+ div.testee{
+	 width:100%;
+	 margin: 30px 0;
+	 position: relative;
+ }
+ 
+ div.testee label {
+	 font-size: 16px;
+	 position: absolute;
+	 left: 0;
+	 bottom: 15px;
+	 color: #FFFFFF;
+	 cursor: text;
+	 transition: 0.5s ease-in-out;
+ }
+ 
+ div.testee input{
+	 width:100%;
+	 padding: 5px;
+	 color: #FFFFFF;
+	 border: 0;
+	 border-bottom: 2px solid #FFFFFF;
+	 outline: 0;
+	 font-size: 16px;
+ }
+ 
+ div.testee input:focus,
+ div.testee input:valid {
+	 border-bottom: 2px solid #d0ff00;
+ }
+ div.testee input:focus ~label,
+ div.testee input:valid ~label{
+ transform: translateY(-30px);
+ font-size: 12px;
+ color: #FFFFFF;
+ }
+ 
+ div.tudo{
+ 	padding:10%;
+	margin:0px;
+	position: absolute;
+	 left: 500px;
+	 top: 0px;
+	}
+	#image-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.image-card {
+    border: 5px solid #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+

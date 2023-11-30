@@ -1,0 +1,191 @@
+
+:root
+{
+    --crl: rgb(0, 0, 0);
+}
+body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: transparent;
+}
+
+body {
+    background-image: url('fundoblur.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho para sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
+    /* Outras propriedades de estilo para o corpo da página, como cores de texto, margens, etc. */
+}
+
+.navigation
+{
+    width: 180px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.26) ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.navigation ul
+{
+    display: flex;
+    width: 150px;   /*distancia entre icones*/
+}
+.navigation ul li
+{
+    position: relative;
+    list-style: none;
+    width: 60px; 
+    z-index: 1;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;   /*colocar eles mais para o lado em conjunto*/
+    text-align: center;
+    font-weight: 600;
+}
+.navigation ul li a .icon
+{
+    position: relative;
+    display: relative;
+    line-height: 7px;
+    font-size: 1.5em;  /*tamanho*/
+    text-align: center;
+    transition: 0.1s;
+    color: var(--crl);
+}
+.navigation ul li:hover a .icon
+{
+    transform: translateX(-30px); /*lado esquedo que vai*/
+}
+.navigation ul li a .text
+{
+    position: absolute;
+    color: var(--crl);
+    font-weight: 10;
+    font-size: 0.7em;
+    letter-spacing: 0.02em;
+    transition: 0;
+}
+.navigation ul li:active a .icon
+{
+    transform: translateX(30px);  /*lado direito*/
+}
+.navigation ul li a .text
+{
+    position: absolute;
+    color: var(--crl);
+    font-weight: 700;  /*letra grossura*/
+    font-size: 0.90em;
+    letter-spacing: 0.07em;
+    transition: 0.7ms;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.navigation ul li:active a .text  
+{
+    opacity: 5;
+    transform: translateY(0px);
+}
+
+.indicador::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background:transparent;
+    border-top-right-radius: 20px;
+}
+.indicador::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background:transparent;
+    border-top-right-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Reset de estilos para o body e ul */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('fundoblur.jpg'); /* Substitua 'sua-imagem.jpg' pelo caminho para sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
+    /* Outras propriedades de estilo para o corpo da página, como cores de texto, margens, etc. */
+}
+
+/* Estilos adicionais para os elementos da sua página, se necessário */
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+header {
+    background-color: #ff9fb7d8; /* Cor de fundo do menu */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFF; /* Cor do texto do menu */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: rgba(120, 203, 252, 0.842); /* Cor do texto do menu ao passar o mouse */
+}
+
+/* ... Outros estilos ... */
+
+.menu-icon {
+    width: 50x; /* tamanho da imagem */
+    height: 50px;
+}

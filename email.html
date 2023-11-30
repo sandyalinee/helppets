@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+</head>
+<body>
+    <center>
+    <h1>Recuperação de Senha</h1>
+    <form action="email.php" method="post">
+        <!-- Campo para inserir o endereço de e-mail -->
+        <label for="email">Endereço de E-mail:</label>
+        <input type="email" id="email" name="email" required>
+<p>
+        <!-- Primeira opção "Esqueceu sua senha" -->
+        <label for="senha">Digite sua nova senha:</label>
+        <input type="senha" id="senha" name="senha" required>
+    </p>
+        <!-- Segunda opção "Esqueceu sua senha" -->
+        <label for="senha">Repita sua nova senha:</label>
+        <input type="senha" id="senha" name="senha" required>
+
+        <input type="submit"  id="cadastrar" name="cadastrar"
+value="Cadastrar"/>
+    </form>
+</center>
+</body>
+</html>
